@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Place favicon.ico in the root directory
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        -->
+        <!--[if lt IE 9]>
+        <script>
+        	document.createElement('video');
+        </script>
+        <![endif]-->
+
+        <!--
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        -->
+        <style media="screen">
+        video#bgvid {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -100;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          /*background: url(polina.jpg) no-repeat;*/
+          background-size: cover;
+        }
+        video { display: block; }
+        @media screen and (max-device-width: 800px) {
+          html {
+               /*background: url(polina.jpg) #000 no-repeat center center fixed;*/
+          }
+          #bgvid {
+              display: none;
+          }
+        }
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <audio loop>
+          <source src="assets/loituma.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="assets/spin.webm" type="video/webm">
+            <source src="assets/spin.mp4" type="video/mp4">
+        </video>
+        <!-- Add your site or application content here
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        -->
+
+    </body>
+</html>
